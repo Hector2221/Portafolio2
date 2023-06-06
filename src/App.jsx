@@ -1,5 +1,5 @@
 import { GlobalStyled } from "./GlobalStyled";
-import { Navbar, Hskills, Contact, Proyects, Footer } from "./layout";
+import { Navbar, Hskills, Contact, Proyects, Footer, About } from "./layout";
 
 const ListSkill = [
   {
@@ -41,6 +41,7 @@ function App() {
     <>
       <GlobalStyled />
       <Navbar />
+      <About/>
       <Proyects />
       <Hskills ListSkill={ListSkill} />
       <Contact />

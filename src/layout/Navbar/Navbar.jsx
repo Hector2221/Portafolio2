@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { RiCodeSSlashLine } from "react-icons/ri";
 
 const StyledHeader = styled.nav`
   width: 100%;
@@ -42,12 +43,32 @@ const StyledSpace = styled.div`
   gap: 26px;
   background: none;
 `;
+const StyledSpace2 = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+`;
 
 export const Navbar = () => {
+  const iconStyle = {
+    color: "white",
+    fontSize: "28px",
+    background: "none",
+  };
+  const iconStyle2 = {
+    color: "green",
+    fontSize: "35px",
+    background: "none",
+  };
+
   return (
     <StyledHeader>
       <StyledContent>
-        <Logo href="" />
+        <StyledSpace2>
+          <RiCodeSSlashLine style={iconStyle2} />
+          <span style={iconStyle}>Hector</span>
+        </StyledSpace2>
         <StyledSpace>
           <StyledLink href="">Inicio</StyledLink>
           <StyledLink href="">Proyectos</StyledLink>
