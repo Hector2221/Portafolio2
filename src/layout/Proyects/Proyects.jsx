@@ -6,10 +6,20 @@ const StyledProyects = styled.div`
   margin: 0 auto;
 `;
 
+const ListProyect = styled.div`
+  width: 100%;
+  background-color: aqua;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
 export const Proyects = () => {
   return (
     <StyledProyects>
       <TitleSection title="Proyectos" />
+      <ListProyect></ListProyect>
     </StyledProyects>
   );
 };

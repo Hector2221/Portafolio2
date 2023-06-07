@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import fb from "../../assets/foto.png";
+// import fb from "../../assets/foto.png";
 import { Button } from "../../components";
 
 const StyledAbout = styled.div`
@@ -60,7 +60,7 @@ export const About = () => {
     <StyledAbout>
       <ContentImg>
         <Img
-          src="https://peru21.pe/resizer/yNu6EZADMOnCY-YGevBD84tCoSM=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/6RDFP4F6QNCN7FYPLOTLM2IQ5M.jpg"
+          src="https://avatars.githubusercontent.com/u/109434318?v=4"
           alt=""
         />
       </ContentImg>
