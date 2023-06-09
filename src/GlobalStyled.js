@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyled = createGlobalStyle`
+body { background: #111827;}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  background: #111827;
   font-family: 'Roboto', sans-serif;
 }
 `;

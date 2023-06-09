@@ -11,6 +11,7 @@ const StyleBtn = styled.button`
   letter-spacing: 2px;
   transition: all 0.5s;
   border: none;
+  background: #111827;
   &::before {
     position: absolute;
     content: "";
