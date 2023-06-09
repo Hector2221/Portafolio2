@@ -5,6 +5,7 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai";
 import { FaCopyright } from "react-icons/fa";
+import foto from "../../assets/2323.jpeg";
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -29,6 +30,16 @@ const StyledContent = styled.div`
   }
 `;
 
+const Enlace = styled.a`
+  text-decoration: none;
+  background: none;
+`;
+
+const ImgAnime = styled.img`
+  width: 80px;
+  border-radius: 50%;
+`;
+
 export const Footer = () => {
   const iconStyle = {
     color: "white",
@@ -41,6 +52,7 @@ export const Footer = () => {
     fontSize: "21px",
     background: "none",
   };
+
   return (
     <>
       <StyledFooter>
@@ -49,11 +61,22 @@ export const Footer = () => {
           <span>2023</span>
           <span>Hector.Alejandro</span>
         </StyledContent>
-        <StyledContent></StyledContent>
         <StyledContent>
-          <AiFillLinkedin style={iconStyle} />
-          <AiFillGithub style={iconStyle} />
-          <AiFillTwitterCircle style={iconStyle} />
+          <ImgAnime src={foto} alt="Logo" />
+        </StyledContent>
+        <StyledContent>
+          <Enlace
+            href="https://www.linkedin.com/in/hector-alejandro-rodriguez-hernandez/"
+            target="_black"
+          >
+            <AiFillLinkedin style={iconStyle} />
+          </Enlace>
+          <Enlace href="https://github.com/Hector2221" target="_black">
+            <AiFillGithub style={iconStyle} />
+          </Enlace>
+          <Enlace href="https://github.com/Hector2221" target="_black">
+            <AiFillTwitterCircle style={iconStyle} />
+          </Enlace>
         </StyledContent>
       </StyledFooter>
     </>
