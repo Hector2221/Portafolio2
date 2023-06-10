@@ -6,6 +6,10 @@ const StyledSkills = styled.div`
   flex-wrap: wrap;
   gap: 12px;
   width: 800px;
+  @media (max-width: 815px) {
+    gap: 4px;
+    width: 370px;
+  }
 `;
 
 const Skillsntent = styled.div`

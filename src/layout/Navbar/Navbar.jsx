@@ -37,6 +37,9 @@ const StyledSpace = styled.div`
   display: flex;
   gap: 26px;
   background: none;
+  @media (max-width: 770px) {
+    display: none;
+  }
 `;
 const StyledSpace2 = styled.div`
   display: flex;

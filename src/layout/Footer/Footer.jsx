@@ -15,6 +15,14 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-around;
   gap: 10px;
+  @media (max-width: 770px) {
+    gap: 20px;
+    height: min-content;
+    background: #030e19;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const StyledContent = styled.div`
@@ -23,10 +31,14 @@ const StyledContent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: #030e19;
+  background: none;
   &:nth-child(1) {
     gap: 2px;
     color: #fff;
+  }
+
+  @media (max-width: 770px) {
+    width: 100%;
   }
 `;
 

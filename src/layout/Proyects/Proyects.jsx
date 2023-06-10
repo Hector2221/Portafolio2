@@ -8,6 +8,10 @@ import { StyledTitle, Tecnologi, TextDescribe } from "../../components/UI";
 const StyledProyects = styled.div`
   width: 95%;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ListProyect = styled.div`
@@ -18,6 +22,10 @@ const ListProyect = styled.div`
   justify-content: center;
   align-items: center;
   margin: 80px 0px;
+  @media (max-width: 770px) {
+    flex-direction: column;
+    margin: 110px 0px;
+  }
 `;
 
 const ContentList = styled.div`
@@ -32,6 +40,15 @@ const ContentList = styled.div`
     width: 400px;
     order: ${(props) => props.valor};
   }
+
+  @media (max-width: 770px) {
+    width: 350px;
+    align-items: start;
+    &:nth-child(1) {
+      width: min-content;
+      order: -1;
+    }
+  }
 `;
 
 const DivBtn = styled.div`
@@ -42,6 +59,9 @@ const DivBtn = styled.div`
 const ImgProyect = styled.img`
   width: 400px;
   border-radius: 12px;
+  @media (max-width: 770px) {
+    width: 300px;
+  }
 `;
 
 // eslint-disable-next-line react/prop-types

@@ -13,10 +13,13 @@ const StyledContact = styled.div`
 `;
 
 const StyledForm = styled.form`
-  width: 700px;
+  width: 650px;
   display: flex;
   gap: 10px;
   flex-direction: column;
+  @media (max-width: 770px) {
+    width: 80%;
+  }
 `;
 const StyledText = styled.textarea`
   width: 100%;
