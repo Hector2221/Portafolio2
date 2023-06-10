@@ -55,26 +55,19 @@ const Img = styled.img`
   border-radius: 50%;
 `;
 
-export const About = () => {
+// eslint-disable-next-line react/prop-types
+export const About = ({ ListAbout }) => {
+  // eslint-disable-next-line react/prop-types
+  const { title, name, img, text } = ListAbout;
   return (
     <StyledAbout>
       <ContentImg>
-        <Img
-          src="https://avatars.githubusercontent.com/u/109434318?v=4"
-          alt=""
-        />
+        <Img src={img} alt={name} />
       </ContentImg>
       <StyledContent>
-        <Titleh2>Desarrollador Web</Titleh2>
-        <Titleh1>Hector Alejandro</Titleh1>
-        <Parrafo>
-          Soy estudiante de Ingeniería en Sistemas Computacionales en mis
-          últimos años de carrera. Con actitud proactiva y autodidacta, siempre
-          en busca de aprender nuevas habilidades y tecnologías, como en
-          participar en nuevos proyectos. Como parte de mi formación he
-          estudiado en Platzi, Oracle ONE y Touch of Tech, donde me he
-          especializado en desarrollo web y tecnologías Front- end.
-        </Parrafo>
+        <Titleh2>{title}</Titleh2>
+        <Titleh1>{name}</Titleh1>
+        <Parrafo>{text}</Parrafo>
         <Button title="Descargar CV" />
       </StyledContent>
     </StyledAbout>

@@ -75,12 +75,19 @@ const ListProyects = [
   },
 ];
 
+const ListAbout = {
+  title: "Desarrollador Web",
+  name: "Hector Alejandro",
+  img: "https://avatars.githubusercontent.com/u/109434318?v=4",
+  text: "Soy estudiante de Ingeniería en Sistemas Computacionales en mis últimos años de carrera. Con actitud proactiva y autodidacta, siempre en busca de aprender nuevas habilidades y tecnologías, como en participar en nuevos proyectos. Como parte de mi formación he estudiado en Platzi, Oracle ONE y Touch of Tech, donde me he especializado en desarrollo web y tecnologías Front- end.",
+};
+
 function App() {
   return (
     <>
       <GlobalStyled />
       <Navbar />
-      <About />
+      <About ListAbout={ListAbout} />
       <Proyects ListProyects={ListProyects} />
       <Hskills ListSkill={ListSkill} />
       <Contact />

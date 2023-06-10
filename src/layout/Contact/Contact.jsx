@@ -32,7 +32,6 @@ const StyledText = styled.textarea`
 
 const FuncionForm = (event) => {
   event.preventDefault();
-  console.log(event);
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
