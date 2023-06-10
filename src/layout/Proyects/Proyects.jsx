@@ -41,7 +41,7 @@ const ImgProyect = styled.img`
 
 export const Proyects = () => {
   return (
-    <StyledProyects>
+    <StyledProyects id="proyects">
       <TitleSection title="Proyectos" />
       <ListProyect>
         <ContentList>

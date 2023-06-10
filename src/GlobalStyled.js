@@ -9,4 +9,7 @@ body { background: #111827;}
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 `;

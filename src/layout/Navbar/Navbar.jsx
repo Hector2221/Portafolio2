@@ -21,8 +21,7 @@ const StyledLink = styled.a`
   color: #ffffff;
   background: none;
   &:hover {
-    color: #ff0000; /* Cambia el color al hacer hover */
-    text-decoration: underline; /* Agrega subrayado al hacer hover */
+    color: rgba(29, 255, 86, 0.5);
   }
 `;
 
@@ -59,17 +58,17 @@ export const Navbar = () => {
   };
 
   return (
-    <StyledHeader>
+    <StyledHeader id="Home">
       <StyledContent>
         <StyledSpace2>
           <RiCodeSSlashLine style={iconStyle2} />
           <span style={iconStyle}>Hector</span>
         </StyledSpace2>
         <StyledSpace>
-          <StyledLink href="">Inicio</StyledLink>
-          <StyledLink href="">Proyectos</StyledLink>
-          <StyledLink href="">Habilidades</StyledLink>
-          <StyledLink href="">Contacto</StyledLink>
+          <StyledLink href="#Home">Inicio</StyledLink>
+          <StyledLink href="#proyects">Proyectos</StyledLink>
+          <StyledLink href="#skill">Habilidades</StyledLink>
+          <StyledLink href="#contact">Contacto</StyledLink>
         </StyledSpace>
       </StyledContent>
     </StyledHeader>

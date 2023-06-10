@@ -53,7 +53,7 @@ const FuncionForm = (event) => {
 
 export const Contact = () => {
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <TitleSection title="Contacto" />
       <StyledForm onSubmit={FuncionForm}>
         <Inputs type="text" title="Asunto" />

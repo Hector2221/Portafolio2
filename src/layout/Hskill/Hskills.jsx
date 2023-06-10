@@ -20,7 +20,7 @@ const Skillsntent = styled.div`
 // eslint-disable-next-line react/prop-types
 export const Hskills = ({ ListSkill }) => {
   return (
-    <Skillsntent>
+    <Skillsntent id="skill">
       <TitleSection title="Habilidades" />
       <StyledSkills>
         <CardSkill ListSkill={ListSkill} />
