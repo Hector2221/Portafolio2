@@ -36,13 +36,52 @@ const ListSkill = [
   },
 ];
 
+const ListProyects = [
+  {
+    title: "Croquis Virtual",
+    message:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+    tecnologi: "HTML, CSS Y JAVASCRIPT",
+    linkGith: "https://www.google.com/",
+    linkDemo: "",
+    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  },
+  {
+    title: "Croquis Virtual",
+    message:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+    tecnologi: "HTML, CSS Y JAVASCRIPT",
+    linkGith: "",
+    linkDemo: "",
+    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  },
+  {
+    title: "Croquis Virtual",
+    message:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+    tecnologi: "HTML, CSS Y JAVASCRIPT",
+    linkGith: "",
+    linkDemo: "",
+    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  },
+  {
+    title: "Croquis Virtual",
+    message:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+    tecnologi: "HTML, CSS Y JAVASCRIPT",
+    linkGith: "",
+    linkDemo: "",
+    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  },
+];
+
 function App() {
   return (
     <>
       <GlobalStyled />
       <Navbar />
-      <About/>
-      <Proyects />
+      <About />
+      <Proyects ListProyects={ListProyects} />
       <Hskills ListSkill={ListSkill} />
       <Contact />
       <Footer />

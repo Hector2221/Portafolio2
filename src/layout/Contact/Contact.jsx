@@ -13,7 +13,7 @@ const StyledContact = styled.div`
 `;
 
 const StyledForm = styled.form`
-  width: 600px;
+  width: 700px;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -23,7 +23,7 @@ const StyledText = styled.textarea`
   height: 80px;
   border: 2px solid #293548;
   border-radius: 8px;
-  font-weight: 400;
+  font-weight: bold;
   padding: 8px;
   outline: none;
   color: #ffff;

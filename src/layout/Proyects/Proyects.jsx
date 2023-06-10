@@ -16,16 +16,20 @@ const ListProyect = styled.div`
   gap: 25px;
   justify-content: center;
   align-items: center;
+  margin: 80px 0px;
 `;
+
 const ContentList = styled.div`
-  width: 500px;
+  width: 480px;
   height: 250px;
   display: flex;
   gap: 12px;
   justify-content: center;
   flex-direction: column;
+  align-items: ${(props) => props.alignItems};
   &:nth-child(1) {
-    align-items: end;
+    width: 400px;
+    order: ${(props) => props.valor};
   }
 `;
 
@@ -39,36 +43,46 @@ const ImgProyect = styled.img`
   border-radius: 12px;
 `;
 
-export const Proyects = () => {
+// eslint-disable-next-line react/prop-types
+export const Proyects = ({ ListProyects }) => {
+  const valor = -1;
+
   return (
     <StyledProyects id="proyects">
       <TitleSection title="Proyectos" />
-      <ListProyect>
-        <ContentList>
-          <ImgProyect
-            src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/solar-orbiter-toma-imagenes-del-sol-como-nunca-antes/9437612-1-esl-MX/Solar-Orbiter-toma-imagenes-del-Sol-como-nunca-antes.jpg"
-            alt=""
-          />
-        </ContentList>
-        <ContentList>
-          <StyledTitle>Croquis Virtual</StyledTitle>
-          <TextDescribe>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices
-            lorem non feugiat egestas amet.
-          </TextDescribe>
-          <Tecnologi>HTML, CSS Y JAVASCRIPT</Tecnologi>
-          <DivBtn>
-            <Btnview>
-              <AiFillGithub />
-              Repositorio
-            </Btnview>
-            <Btnview>
-              <TbWorld />
-              Demo
-            </Btnview>
-          </DivBtn>
-        </ContentList>
-      </ListProyect>
+      {ListProyects.map(
+        ({ title, message, tecnologi, linkGith, linkDemo, img }, index) => {
+          const dynamicValor = index % 2 === 0 ? 1 : -1;
+          const alignItems = dynamicValor === -1 ? "center" : "start";
+
+          return (
+            <ListProyect key={index}>
+              <ContentList valor={dynamicValor * valor}>
+                <ImgProyect src={img} alt={title} />
+              </ContentList>
+              <ContentList alignItems={alignItems}>
+                <StyledTitle>{title}</StyledTitle>
+                <TextDescribe>{message}</TextDescribe>
+                <Tecnologi>{tecnologi}</Tecnologi>
+                <DivBtn>
+                  <a href={linkGith} target="_black">
+                    <Btnview>
+                      <AiFillGithub />
+                      Repositorio
+                    </Btnview>
+                  </a>
+                  <a href={linkDemo} target="_black">
+                    <Btnview>
+                      <TbWorld />
+                      Demo
+                    </Btnview>
+                  </a>
+                </DivBtn>
+              </ContentList>
+            </ListProyect>
+          );
+        }
+      )}
     </StyledProyects>
   );
 };
