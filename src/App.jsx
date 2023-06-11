@@ -1,6 +1,13 @@
 import { GlobalStyled } from "./GlobalStyled";
 import { Navbar, Hskills, Contact, Proyects, Footer, About } from "./layout";
 
+import Aluragreek from "./assets/Proyects/Aluragree.png";
+import croquis from "./assets/Proyects/croquis.png";
+import org from "./assets/Proyects/org.png";
+import Portafolio from "./assets/Proyects/Portafolio-react.png";
+import encriptador from "./assets/Proyects/Encriptador.png";
+import rating from "./assets/Proyects/rating-component.png";
+
 const ListSkill = [
   {
     title: "React",
@@ -40,38 +47,54 @@ const ListProyects = [
   {
     title: "Croquis Virtual",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+      "Proyecto de titulación: Sistema de búsqueda de edificios y salones de clases para optimizar el tiempo.",
     tecnologi: "HTML, CSS Y JAVASCRIPT",
-    linkGith: "https://www.google.com/",
-    linkDemo: "",
-    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    linkGith: "https://croquislp.netlify.app/",
+    linkDemo: "https://croquislp.netlify.app/",
+    img: croquis,
   },
   {
-    title: "Croquis Virtual",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
-    tecnologi: "HTML, CSS Y JAVASCRIPT",
-    linkGith: "",
-    linkDemo: "",
-    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    title: "My Org",
+    message: "Aplicacion web donde puedes organizar a tu equipo de trabajo",
+    tecnologi: "REACT",
+    linkGith: "https://github.com/Hector2221/org-react",
+    linkDemo: "https://org-react.netlify.app/",
+    img: org,
   },
   {
-    title: "Croquis Virtual",
+    title: "AluraGeek",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+      "Shop Store, consumo de una Api Rest para productos, usuarios, etc.",
     tecnologi: "HTML, CSS Y JAVASCRIPT",
-    linkGith: "",
-    linkDemo: "",
-    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    linkGith: "https://github.com/Hector2221/AluraGeek",
+    linkDemo: "hector2221.github.io/AluraGeek/",
+    img: Aluragreek,
   },
   {
-    title: "Croquis Virtual",
-    message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices lorem non feugiat egestas amet.",
+    title: "Encriptador",
+    message: "Encriptador de palabras a,e,i,o,u",
     tecnologi: "HTML, CSS Y JAVASCRIPT",
-    linkGith: "",
-    linkDemo: "",
-    img: "https://images.pexels.com/photos/209807/pexels-photo-209807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    linkGith:
+      "https://github.com/Hector2221/Encriptador-de-texto---Alura-Challenges-ONE",
+    linkDemo:
+      "https://hector2221.github.io/Encriptador-de-texto---Alura-Challenges-ONE/",
+    img: encriptador,
+  },
+  {
+    title: "Rating Component",
+    message: "Aplicacion web con react router dom ",
+    tecnologi: "REACT",
+    linkGith: "https://github.com/Hector2221/react-rating-component",
+    linkDemo: "https://hector2221.github.io/react-rating-component/",
+    img: rating,
+  },
+  {
+    title: "Portafolio",
+    message: "Portafolio creado como practica",
+    tecnologi: "REACT",
+    linkGith: "https://github.com/Hector2221/single-page-developer-portfolio",
+    linkDemo: "https://hector2221.github.io/single-page-developer-portfolio/",
+    img: Portafolio,
   },
 ];
 

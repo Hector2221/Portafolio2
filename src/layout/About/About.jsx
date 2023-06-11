@@ -37,9 +37,9 @@ const Parrafo = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
-  width: 500px;
+  width: 600px;
   @media (max-width: 770px) {
-    width: 300px;
+    width: 320px;
   }
 `;
 
